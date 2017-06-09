@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .fon {
+      background: url("696355cb.jpeg") center no-repeat;
+      min-height: 100%;
+      min-width: 1024px;
+      width: 100%;
+      height: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    
+    #player {
+      width: 35px;
+      height: 36px;
+      background: url("/logopost-700x329.png");
+      transition: all 1s ease-out 0s;
+      position: absolute;
+      position: relative;
+    }
+    
+    .bullet {
+      background: red;
+      width: 10px;
+      height: 8px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      transition: all 1s ease-out 0s;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 0;
+      left: 10px;
+      
+    }
+    .fire {
+      top: -600px;
+      transition: 1s!important;
+      position: absolute;
+    }
+    .stopRun {
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fon">
+    <div id="player" style="top:50px; left: 50px"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
